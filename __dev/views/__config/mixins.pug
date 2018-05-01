@@ -1,0 +1,10 @@
+mixin logo(currentPageTitle, className)
+    mixin wrapLogo(currentPageTitle)
+        if (currentPageTitle == 'Главная страница')
+            div.logo(class=`${className}__logo`)
+                block
+        else
+            a(href="/main.html" class=`${className}__logo`).logo
+                block
+    +wrapLogo(currentPageTitle)
+        img(src="./template/images/logo.png" alt="" title="")

@@ -1,0 +1,13 @@
+block vars
+include ../../__config/variables
+include ../../__config/mixins
+
+doctype html
+html(lang="ru").no-js
+    include head
+    body
+        main.main.clearfix
+            block block-content
+            include ../setting-form/setting-form
+            include ../social/social
+        script(src='scripts/main.js')

@@ -1,0 +1,53 @@
+extends ./modules/layout/layout
+
+block vars
+    -var currentPageTitle = ["UI"]
+block block-content
+    .wrapper
+        h1 Элементы формы
+        form(action="").form
+            div.form__item
+                label.form__title Поле ввода
+                input(type="text", name="" placeholder="Поле ввода").error
+                .error-msg Поле обязательно для заполнения
+            div.form__item
+                label.form__title Выпадающий список
+                select
+                    option Выберите пункт
+                    option Выберите пункт
+                    option Выберите пункт
+            div.form__item
+                label.form__title Радиобоксы
+                div.form__item
+                    input(type="radio" id="action-11" name="test" checked="")
+                    label(for="action-11") Летний сезон подарков открыт!
+                div.form__item
+                    input(type="radio" id="action-22" name="test")
+                    label(for="action-22") В лето вместе с JBL!
+                div.form__item
+                    input(type="radio" id="action-33" name="test")
+                    label(for="action-33") 500 р. В нашу пользу!
+            div.form__item
+                label.form__title Чекбоксы
+                div.form__item
+                    input(type="checkbox" id="action-1" checked="")
+                    label(for="action-1") Летний сезон подарков открыт!
+                div.form__item
+                    input(type="checkbox" id="action-2")
+                    label(for="action-2") В лето вместе с JBL!
+                div.form__item
+                    input(type="checkbox" id="action-3")
+                    label(for="action-3") 500 р. В нашу пользу!
+            div.form__item
+                label.form__title Чекбоксы
+                div.form-item.error
+                    input(type="checkbox" id="action-111" checked="")
+                    label(for="action-111") Летний сезон подарков открыт!
+                div.form-item.error
+                    input(type="radio" id="action-222" checked="")
+                    label(for="action-222") В лето вместе с JBL!
+            div.form__item
+                label.form__title Текстовый блок
+                textarea
+            div.form__item
+                input(type="submit", value="Отправить")

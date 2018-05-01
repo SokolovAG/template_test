@@ -1,0 +1,77 @@
+.social 
+    width 100%
+    float none
+    padding 26px 20px 35px 22px
+    background #fff6e0
+
+    @media (min-width: $desktop)
+        width 32%
+        float right
+
+.social__title
+    font-family 'Open Sans', Arial, sans-serif
+    font-weight 700
+    font-size 14px
+    text-transform uppercase
+    color #333333
+    margin-bottom 15px
+
+.social__caption 
+    font-size 12px
+    margin-bottom 21px
+
+.social__item 
+    margin-bottom 15px
+
+.social__link 
+    display block
+    width 100%
+    padding-left 25px
+    color $WHITE
+    line-height 40px
+    text-decoration none
+    position relative
+
+    &:hover
+        color $WHITE
+        opacity 0.7
+
+    &--fb
+        background-color: $FB_BLUE
+        
+        &::before
+            content ''
+            display inline-block
+            vertical-align middle
+            sprite($s-fb)
+            margin-right 35px
+
+    &--vk
+        background-color $VK_BLUE
+
+        &::before
+            content ''
+            display inline-block
+            vertical-align middle
+            sprite($s-vk)
+            margin-right 20px
+
+    &--tw
+        background-color $TW_BLUE
+
+        &::before
+            content ''
+            display inline-block
+            vertical-align middle
+            sprite($s-twitter)
+            margin-right 25px
+
+    &--ok
+        background-color $OK_ORANGE
+
+        &::before
+            content ''
+            display inline-block
+            vertical-align middle
+            sprite($s-ok)
+            margin-right 35px

@@ -1,0 +1,66 @@
+@import 'helpers/01_variables.styl'
+a
+	color $LINK_COLOR
+	text-decoration none
+	&:hover
+		color $LINK_COLOR_HOVER
+
+img
+	max-width 100%
+
+body
+	position relative
+	font-size $BASE_SIZE
+	line-height $LINE_HEIGHT
+	color $FONT_COLOR
+	font-family Verdana, sans-serif
+	font-weight normal
+	background $WHITE
+
+*:focus
+	outline none
+main
+	position relative
+
+ul,li
+	list-style none
+	padding 0
+
+*
+	box-sizing border-box
+	margin 0
+	padding 0
+
+.wrapper
+	min-width 300px
+	margin 0 auto
+	max-width 940px
+
+.main-title 
+	font-family 'Open Sans', Arial, sans-serif
+	font-weight 700
+	font-size 24px
+	line-height 30px
+	text-transform uppercase
+	color $BLACK
+	margin-top 0
+	margin-bottom 5px
+
+.clearfix::after
+	content ''
+	display table
+	clear both
+
+.main 
+	max-width 940px
+	margin 0 auto
+	padding 21px 17px 90px 33px
+	background: linear-gradient(90deg, #f4f4f4 0, #f4f4f4 7px, #d5d5d5 0, #d5d5d5 8px, #fff 0, #fff 10px, #d5d5d5 0, #d5d5d5 11px, #fff 0, #fff 13px, #d5d5d5 0, #d5d5d5 14px, #fff 0)
+
+input[type="text"]:disabled,
+input[type="password"] 
+	border none
+	background transparent
+
+input[value="Дмитрий"]
+	color #333333		
